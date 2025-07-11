@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ucapan Ulang Tahun Nadhira Firmansyah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- TEMPLATE 1 -->
+  <div class="container template-1">
+    <header>
+      <div class="sparkle">✨</div>
+      <h1>Selamat Ulang Tahun</h1>
+      <h2>Untukmu, <span class="highlight">Nadhira Firmansyah</span> <span class="highlight-emoji">🎂</span></h2>
+    </header>
+    <section class="photos">
+      <div class="photo-frame"><img src="5.jpg" alt="Momen 1"></div>
+      <div class="photo-frame"><img src="6.jpg" alt="Momen 2"></div>
+      <div class="photo-frame"><img src="7.jpg" alt="Momen 3"></div>
+      <div class="photo-frame"><img src="8.jpg" alt="Momen 4"></div>
+    </section>
+    <section class="message">
+      <p>Sayangku, setiap detik bersamamu adalah berkah. <span>💖</span></p>
+      <p>Hari ini aku berdoa semoga senyummu selalu bersinar cerah. <span>🌟</span></p>
+      <p>Selamat ulang tahun, cintaku! <span>🥳</span></p>
+      <p class="signature">- [Namamu]</p>
+    </section>
+  </div>  <!-- TEMPLATE 2 -->  <div class="container template-2">
+    <header>
+      <div class="sparkle">✨</div>
+      <h1>Happy Birthday</h1>
+      <h2><span class="highlight">Nadhira Firmansyah</span> <span class="highlight-emoji">🎈</span></h2>
+    </header>
+    <section class="carousel">
+      <div class="slides">
+        <div class="slide"><img src="1.jpg" alt="Slide 1"></div>
+        <div class="slide"><img src="2.jpg" alt="Slide 2"></div>
+        <div class="slide"><img src="3.jpg" alt="Slide 3"></div>
+      </div>
+      <button class="prev">◀️</button>
+      <button class="next">▶️</button>
+    </section>
+    <section class="message">
+      <p>Di hari istimewa ini, aku berharap semua impianmu terwujud. 💭</p>
+      <p>Terima kasih telah menghadirkan cinta dan kebahagiaan. 💕</p>
+      <p>Love you to the moon and back! 🌙</p>
+      <p class="signature">— [Namamu]</p>
+    </section>
+  </div>  <!-- TEMPLATE 3 -->  <div class="container template-3">
+    <header>
+      <div class="sparkle">✨</div>
+      <h1>Untuk Nadhira</h1>
+      <h2>Selamat Ulang Tahun! <span class="highlight-emoji">🎉</span></h2>
+    </header>
+    <section class="photo-large">
+      <img src="4.jpg" alt="Foto Spesial">
+    </section>
+    <section class="poem">
+      <p>Ketika matahari tiba,<br>ingatlah sinarmu yang menyapa hatiku. ☀️</p>
+      <p>Pohon-pohon merunduk,<br>menyambut bahagia di harimu.</p>
+      <p>Semoga cinta kita tumbuh makin indah,<br>seperti bunga yang tak pernah pudar. 🌸</p>
+      <p class="signature center">💕 [Namamu]</p>
+    </section>
+  </div>  <script>
+    // Carousel Interactive
+    document.querySelectorAll('.template-2').forEach(carousel => {
+      const slides = carousel.querySelector('.slides');
+      const total = slides.children.length;
+      let index = 0;
+      const update = () => slides.style.transform = `translateX(-${index * 100}%)`;
+      carousel.querySelector('.next').onclick = () => { index = (index + 1) % total; update(); };
+      carousel.querySelector('.prev').onclick = () => { index = (index - 1 + total) % total; update(); };
+    });
+
+    // Click to add floating hearts
+    document.body.onclick = (e) => {
+      const heart = document.createElement('div');
+      heart.textContent = '💘';
+      heart.style.position = 'absolute';
+      heart.style.left = e.pageX+'px';
+      heart.style.top = e.pageY+'px';
+      heart.style.fontSize = '24px';
+      heart.style.pointerEvents = 'none';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 1000);
+    };
+  </script></body>
+</html>

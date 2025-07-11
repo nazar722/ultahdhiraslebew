@@ -1,0 +1,67 @@
+body {
+  background-color: #f8f9fa;
+}
+
+h2 {
+  color: #333;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-success, .btn-danger {
+  border-radius: 20px;
+}
+
+#login, #upload {
+  margin-top: 50px;
+}
+
+form input, form textarea {
+  border-radius: 10px;
+}
+
+nav a.nav-link {
+  font-size: 18px;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f8fa;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #343a40;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer small {
+  color: #6c757d;
+}
